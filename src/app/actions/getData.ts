@@ -38,7 +38,8 @@ export const fetchMakesAndYear = async () => {
         const makes: HandledMake[] = results.map(({ MakeId, MakeName }) => ({
             id: MakeId,
             name: MakeName,
-        }));
+        }))
+            .sort((a, b) => a.name.localeCompare(b.name));
 
         const years = Array.from({ length: new Date().getFullYear() - startYear + 1 }, (_, i) => startYear + i);
 
