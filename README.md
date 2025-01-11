@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Car Catalog Project
+
+This project is an interface for searching cars where users can select the car make and year to view available models.
+
+
+## Technologies
+
+- **Next.js**: For server-side rendering.
+
+- **Tailwind CSS**: For rapid styling.
+
+- **TypeScript**: For type safety and better development experience.
+
+- **React** : For building the user interface.
+
 
 ## Getting Started
 
-First, run the development server:
+### 1. Clone the Repository
+
+Clone the repository to your local machine:
+
+```bash
+git clone https://github.com/VioletaNaboy/car-dealer-app
+```
+
+### 2. Install Dependencies
+
+Navigate to the project folder and install the dependencies:
+
+```bash
+cd your_project_directory
+npm install
+```
+
+### 3. Run the Development Server
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Your project will be available at http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4. Build the Project
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To create a production build, run:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 5. Start the Production Server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To start the production server after building:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm start
+```
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Features Overview
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Select Car Make and Year
+
+2. On the homepage, choose a car make and year from the dropdown menus. Once both fields are selected, the "Next" button will be enabled.
+
+![Screenshot1](/public/screenshot1.png)
+
+3. On the next page, you will see a list of available models for the selected make and year.
+
+![Screenshot2](/public/screenshot2.png)
+
+4. Return to Search
+
+5. You can always go back to the search page by clicking the "Return to search" button.
+
+![Screenshot3](/public/screenshot3.png)
