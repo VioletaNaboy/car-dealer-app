@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 
 import { Make } from "../components/DropDownEl"
-import { fetchMakesAndYear } from "../actions/getMakesAndYear"
+import { fetchMakesAndYear } from "../actions/getData"
 import { DropDownEl } from "../components/DropDownEl"
 
 
@@ -28,7 +28,7 @@ export default function FilterPage() {
                 <DropDownEl array={makes} title='makes' func={handleSelectMake} />
                 <DropDownEl array={years} title='years' func={handleSelectYear} />
             </div>
-            <Link href={make && year ? `/results/${make}/${year}` : '#'}>Next</Link>
+            <Link href={make && year ? `/result/${make}/${year}` : '#'}>Next</Link>
         </>
     )
 }
